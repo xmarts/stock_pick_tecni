@@ -26,7 +26,7 @@ class TecniCeramicaLineStock(models.Model):
                 self.cajas_x = line.product_id.cajas
 
                 self.unidad = self.cajas*self.unidad_x
-                self.cajas = self.quantity/self.cajas_x
+                self.cajas = self.quantity_done/self.cajas_x
                 #self.quantity = self.unidad*self.metros_x
             #return self.unidad
 
